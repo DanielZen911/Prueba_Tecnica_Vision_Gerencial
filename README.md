@@ -29,6 +29,11 @@ Este proyecto es una solución técnica desarrollada para la prueba de Visión G
 * **KPI de Monto Total**: Indicador clave del valor global de la cartera.
 * **Distribución por Producto**: Análisis de la composición del crédito.
 
+## Ejecución de la API
+1. Instalar dependencias: `pip install fastapi uvicorn`
+2. Correr servidor: `uvicorn api:app --reload`
+3. Acceder a la documentación: `http://127.0.0.1:8000/docs`
+
 ##  Requisitos e Instalación
 
 ### 1. Clonar el repositorio
@@ -75,5 +80,5 @@ Al terminar, el sistema confirmará que los datos han sido guardados exitosament
 
 ##  Autor
 
-**Daniel Zen**  
+**Daniel Acevedo**  
 Prueba Técnica para Visión Gerencial
