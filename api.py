@@ -18,12 +18,12 @@ def inicio():
 @app.get("/consultar/{entidad}/{cartera}")
 def consultar_datos(entidad: str, cartera: str):
     query = text("""
-        SELECT * FROM datos_cartera 
-        WHERE nombreentidad = :entidad AND desc_renglon = :cartera
+        SELECT * FROM public.cartera 
+        WHERE UPPER(nombreentidad) LIke UPPER(:entidad) AND UPPER(desc_renglon) LIKE UPPER(:cartera)
     """)
     
     with engine.connect() as connection:
-        result = connection.execute(query, {"entidad": entidad, "cartera": cartera})
+        result = connection.execute(query, {"entidad": f"%{entidad}%", "cartera": f"%{cartera}%"})
         data = [dict(row._mapping) for row in result]
         
     if not data:
