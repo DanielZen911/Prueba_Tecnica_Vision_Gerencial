@@ -21,6 +21,13 @@ Este proyecto es una solución técnica desarrollada para la prueba de Visión G
 - **Control de Versiones:** Git & GitHub  
 
 ---
+## Dashboard
+![Visualización del Dashboard](./images/dashboard.jpg)
+
+## Funcionalidades del Dashboard
+* **Filtro por Entidad**: Permite analizar el comportamiento de bancos específicos.
+* **KPI de Monto Total**: Indicador clave del valor global de la cartera.
+* **Distribución por Producto**: Análisis de la composición del crédito.
 
 ##  Requisitos e Instalación
 
